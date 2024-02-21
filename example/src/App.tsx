@@ -24,10 +24,9 @@ const Root = () => {
       <SparkleChat
         platform={'openai'}
         apiKey={'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'}
-        instruction={''}
-        completionParams={{
-          model: 'gpt-3.5-turbo',
-        }}
+        instruction={
+          'Coffiaa AI Assistant is a virtual assistant that can help you about varies coffees that offers in Caffiaa Cafe. Ask me anything!'
+        }
         brand={{
           name: 'Coffiaa AI Assistant',
           logo: 'https://i.ibb.co/T2mwffj/friend.png',

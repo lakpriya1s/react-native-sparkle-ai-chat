@@ -20,11 +20,21 @@ import type { IMessage } from './types';
 interface IChatScreenProps {
   platform: 'openai' | 'gemini';
   apiKey: string;
+  apiBaseUrl?: string;
+  organization?: string;
+  maxModelTokens?: number;
+  maxResponseTokens?: number;
   completionParams?: {
-    temperature?: number;
+    model: string;
+    temperature?: number | null;
+    top_p?: number | null;
+    n?: number | null;
+    stream?: boolean | null;
     max_tokens?: number;
-    top_p?: number;
-    model?: string;
+    presence_penalty?: number | null;
+    frequency_penalty?: number | null;
+    logit_bias?: object | null;
+    user?: string;
   };
   instruction: string;
   brand?: {
@@ -43,6 +53,10 @@ interface IChatScreenProps {
 function ChatScreen({
   platform,
   apiKey,
+  apiBaseUrl,
+  organization,
+  maxModelTokens,
+  maxResponseTokens,
   completionParams,
   instruction,
   brand = {
@@ -75,7 +89,11 @@ function ChatScreen({
       setStop(true);
       let apiGpt35 = new ChatGPTAPI({
         apiKey,
+        apiBaseUrl,
+        organization,
         completionParams,
+        maxModelTokens,
+        maxResponseTokens,
       });
 
       const res = async () => {
@@ -101,7 +119,17 @@ function ChatScreen({
       };
       res();
     },
-    [addMessage, apiKey, completionParams, instruction, platform]
+    [
+      addMessage,
+      apiBaseUrl,
+      apiKey,
+      completionParams,
+      instruction,
+      maxModelTokens,
+      maxResponseTokens,
+      organization,
+      platform,
+    ]
   );
 
   const flatListRef = useRef(null);
