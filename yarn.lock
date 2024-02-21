@@ -14673,9 +14673,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-sparkle-ai-sdk-example@workspace:example":
+"react-native-sparkle-ai-chat-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "react-native-sparkle-ai-sdk-example@workspace:example"
+  resolution: "react-native-sparkle-ai-chat-example@workspace:example"
   dependencies:
     "@babel/core": ^7.20.0
     "@expo/webpack-config": ^18.0.1
@@ -14691,9 +14691,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-sparkle-ai-sdk@workspace:.":
+"react-native-sparkle-ai-chat@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react-native-sparkle-ai-sdk@workspace:."
+  resolution: "react-native-sparkle-ai-chat@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0

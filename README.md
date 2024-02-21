@@ -1,17 +1,17 @@
-# react-native-sparkle-ai-sdk
+# react-native-sparkle-ai-chat
 
 Sparkle AI SDK for react-native
 
 ## Installation
 
 ```sh
-npm install react-native-sparkle-ai-sdk
+npm install react-native-sparkle-ai-chat
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-sparkle-ai-sdk';
+import { multiply } from 'react-native-sparkle-ai-chat';
 
 // ...
 

@@ -1,6 +1,6 @@
 {
-  "name": "react-native-sparkle-ai-sdk",
-  "version": "0.1.0",
+  "name": "react-native-sparkle-ai-chat",
+  "version": "0.1.1",
   "description": "Sparkle AI SDK for react-native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-sparkle-ai-sdk-example",
+    "example": "yarn workspace react-native-sparkle-ai-chat-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lakpriya1s/react-native-sparkle-ai-sdk.git"
+    "url": "git+https://github.com/lakpriya1s/react-native-sparkle-ai-chat.git"
   },
   "author": "Lakpriya <lakpriya1@yahoo.com> (https://github.com/lakpriya1s)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lakpriya1s/react-native-sparkle-ai-sdk/issues"
+    "url": "https://github.com/lakpriya1s/react-native-sparkle-ai-chat/issues"
   },
-  "homepage": "https://github.com/lakpriya1s/react-native-sparkle-ai-sdk#readme",
+  "homepage": "https://github.com/lakpriya1s/react-native-sparkle-ai-chat#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

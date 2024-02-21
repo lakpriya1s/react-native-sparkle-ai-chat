@@ -6,7 +6,7 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
-import SparkleChat from 'react-native-sparkle-ai-sdk';
+import SparkleChat from 'react-native-sparkle-ai-chat';
 
 const Root = () => {
   const inset = useSafeAreaInsets();
