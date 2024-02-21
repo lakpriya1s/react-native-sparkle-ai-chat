@@ -1,3 +1,8 @@
+import { Provider } from 'react-redux';
+import ChatScreen from './ChatScreen';
+import React from 'react';
+import store from './store';
+
 /**
  * Defines the properties required to configure the SparkleChat component.
  *
@@ -80,11 +85,12 @@ export interface IChatScreenProps {
   };
 }
 
-/**
- * SparkleChat - A React Functional Component providing a chat interface that allows users to interact with a specified chat platform through a customizable UI.
- *
- * @param {IChatScreenProps} props - The properties required to configure the SparkleChat component.
- * @returns {React.FC<IChatScreenProps>} A React Functional Component for the chat interface.
- */
-declare const SparkleChat: React.FC<IChatScreenProps>;
+const SparkleChat = (props: IChatScreenProps) => {
+  return (
+    <Provider store={store}>
+      <ChatScreen {...props} />
+    </Provider>
+  );
+};
+
 export default SparkleChat;
