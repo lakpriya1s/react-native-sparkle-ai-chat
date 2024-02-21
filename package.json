@@ -155,5 +155,16 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.22.0",
+    "@reduxjs/toolkit": "^2.2.1",
+    "p-timeout": "^6.1.2",
+    "react-native-sse": "^1.2.0",
+    "react-native-typing-animation": "^0.1.7",
+    "react-native-uuid": "^2.0.1",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0"
   }
 }
