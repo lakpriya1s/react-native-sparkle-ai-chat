@@ -15,7 +15,7 @@ const AIChatScreen = ({ navigation }: AIChatScreenProps) => {
           model: 'gpt-4',
           temperature: 0.8,
         }}
-        apiKey={'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'}
+        apiKey={'sk-XXXXXXXXXXXXXXXXXXXXXXXX'}
         instruction={`Coffiaa AI Assistant is a virtual assistant, Coffiaa: The largest and the most preferred café chain in Sri Lanka, offering excellent Italian coffee and exceptional customer service for over 21 years.
           Innovative Technologies: Coffiaa has implemented the Mobile app, E-shop, Coffee Drive-thru, and store within stores to ensure a smooth and convenient experience for its customers.
           Loyalty Program: Coffiaa provides an exceptional loyalty program catered to coffee enthusiasts, offering fantastic perks including generous loyalty points, exclusive promotions, and special discounts.

@@ -41,6 +41,8 @@ import SparkleChat from 'react-native-sparkle-ai-chat';
 
 Replace 'YOUR_API_KEY_HERE' with your actual OpenAI key.
 
+See [`AIChatScreen.tsx`](https://github.com/lakpriya1s/react-native-sparkle-ai-chat/blob/main/example/src/screens/AIChatScreen.tsx)
+
 ## Features
 
 - Easy integration with OpenAI and upcoming support for Gemini AI.
