@@ -10,12 +10,13 @@ import {
   Platform,
   Image,
 } from 'react-native';
-import { ChatGPTAPI } from './util';
+import { ChatGPTAPI } from './library';
 import { addChat, chatsSelector, resetChats } from './store/slices/chatsSlice';
 import { useAppDispatch, useAppSelector } from './store/hooks';
 import { colors } from './theme/colors';
 import TypingIndicator from './components/TypingIndicator';
 import type { IMessage } from './types';
+import { getScaledNumber } from './util';
 
 interface IChatScreenProps {
   platform: 'openai' | 'gemini';
@@ -48,6 +49,7 @@ interface IChatScreenProps {
     leftBubbleColor?: string;
     rightBubbleColor?: string;
   };
+  onClose?: () => void;
 }
 
 function ChatScreen({
@@ -69,6 +71,7 @@ function ChatScreen({
     leftBubbleColor: '#1F1F1F',
     rightBubbleColor: '#FF5C5C',
   },
+  onClose,
 }: IChatScreenProps): JSX.Element {
   const dispatch = useAppDispatch();
   const es = useRef<any>();
@@ -294,7 +297,28 @@ function ChatScreen({
                 dispatch(resetChats());
               }}
             >
-              <Text style={styles.resetButtonText}>+</Text>
+              <Text
+                style={[
+                  styles.resetButtonText,
+                  {
+                    color: brand.primaryColor,
+                  },
+                ]}
+              >
+                ⟳
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.closeButton} onPress={onClose}>
+              <Text
+                style={[
+                  styles.closeButtonText,
+                  {
+                    color: brand.primaryColor,
+                  },
+                ]}
+              >
+                ✕
+              </Text>
             </TouchableOpacity>
           </View>
           <View
@@ -419,7 +443,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingHorizontal: 10,
     marginRight: 10,
-    paddingTop: 10,
+    paddingTop: Platform.select({
+      ios: 10,
+      android: 0,
+    }),
   },
   sendButton: {
     paddingHorizontal: 8,
@@ -459,21 +486,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   sendButtonText: {
-    fontSize: 30,
+    fontSize: getScaledNumber(25),
     height: 30,
     transform: [{ rotate: '-45deg' }],
   },
   stopButtonText: {
     height: 30,
-    fontSize: 20,
+    fontSize: getScaledNumber(25),
   },
   resetButton: {
+    position: 'absolute',
+    right: 40,
+    padding: 10,
+  },
+  closeButton: {
     position: 'absolute',
     right: 10,
     padding: 10,
   },
+  closeButtonText: {
+    fontSize: getScaledNumber(20),
+    lineHeight: 40,
+  },
   resetButtonText: {
-    fontSize: 30,
+    fontSize: getScaledNumber(40),
+    lineHeight: 40,
   },
 });
 

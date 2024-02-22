@@ -1,52 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import AIChatScreen from './screens/AIChatScreen';
+import Home from './screens/HomeScreen';
 
-import SparkleChat from 'react-native-sparkle-ai-chat';
+const Stack = createNativeStackNavigator();
 
-const Root = () => {
-  const inset = useSafeAreaInsets();
+const RootNavigation = () => {
   return (
     <>
-      <StatusBar style="light" />
-      <View
-        style={[
-          styles.topBar,
-          {
-            height: inset.top,
-          },
-        ]}
-      />
-      <SparkleChat
-        platform={'openai'}
-        apiKey={'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'}
-        instruction={
-          'Coffiaa AI Assistant is a virtual assistant that can help you about varies coffees that offers in Caffiaa Cafe. Ask me anything!'
-        }
-        brand={{
-          name: 'Coffiaa AI Assistant',
-          logo: 'https://i.ibb.co/T2mwffj/friend.png',
-          primaryColor: '#FF5C5C',
-          inputContainerColor: '#161616',
-          headerColor: '#161616',
-          backgroundColor: '#000',
-          textColor: '#fff',
-          leftBubbleColor: '#1F1F1F',
-          rightBubbleColor: '#FF5C5C',
-        }}
-      />
-      <View
-        style={[
-          styles.bottomBar,
-          {
-            height: inset.bottom,
-          },
-        ]}
-      />
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen
+            name="AIChatScreen"
+            component={AIChatScreen}
+            options={{ animation: 'slide_from_bottom' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   );
 };
@@ -54,23 +27,9 @@ const Root = () => {
 const App = () => {
   return (
     <SafeAreaProvider>
-      <Root />
+      <RootNavigation />
     </SafeAreaProvider>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#161616',
-    position: 'relative',
-  },
-  topBar: {
-    backgroundColor: '#000',
-  },
-  bottomBar: {
-    backgroundColor: '#161616',
-  },
-});

@@ -106,6 +106,10 @@ export interface IChatScreenProps {
    */
   instruction: string;
   /**
+   * Optional callback to be invoked when the chat is closed.
+   */
+  onClose?: () => void;
+  /**
    * Optional branding configurations to customize the chat UI appearance.
    */
   brand?: {
@@ -147,6 +151,8 @@ export interface IChatScreenProps {
     rightBubbleColor?: string;
   };
 }
+
+import 'react-native-url-polyfill/auto';
 
 const SparkleChat = (props: IChatScreenProps) => {
   return (

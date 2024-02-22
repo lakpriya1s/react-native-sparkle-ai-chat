@@ -3,7 +3,6 @@ import uuid from 'react-native-uuid';
 import EventSource from 'react-native-sse';
 import store from '../store';
 import getStorage from 'redux-persist/es/storage/getStorage';
-// import RNReactNativeHapticFeedback from 'react-native-haptic-feedback';
 
 var ChatGPTError = class extends Error {};
 var openai;
