@@ -1,5 +1,7 @@
 # Sparkle AI Chat ✨
 
+[![npm version](https://badge.fury.io/js/react-native-sparkle-ai-chat.svg)](https://badge.fury.io/js/react-native-sparkle-ai-chat) ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Enhance your React Native applications with a powerful AI chat feature using Sparkle AI Chat library. This library integrates OpenAI's API and plans to extend support for Gemini AI APIs, making a wide range of models accessible for your applications.
 
 ## Installation
@@ -46,7 +48,7 @@ Replace 'YOUR_API_KEY_HERE' with your actual OpenAI key.
 - Support for a wide range of AI models including GPT-4
 - Extendable for future AI platforms.
 
-## `IChatScreenProps`
+## Props
 
 ### Required Properties
 
