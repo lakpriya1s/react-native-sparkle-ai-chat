@@ -4,6 +4,23 @@
 
 Enhance your React Native applications with a powerful AI chat feature using Sparkle AI Chat library. This library integrates OpenAI's API and plans to extend support for Gemini AI APIs, making a wide range of models accessible for your applications.
 
+## Example
+
+<img src="screenshots/screen_record.gif" width="300">
+
+## Downloads
+
+Install our app to check the features!
+
+<p style="display: flex; gap: 20px">
+    <a href="https://apps.apple.com/hr/app/sparkle-ai/id6450364523">
+        <img src="screenshots/app_store.png" width="200px" alt="Ball Demo Screenshot"/>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=lk.codescale.sparkle">
+        <img src="screenshots/google_play.png" width="200px" alt="Ball Demo Screenshot"/>
+    </a>
+</p>
+
 ## Installation
 
 ```bash
