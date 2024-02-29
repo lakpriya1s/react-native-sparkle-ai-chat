@@ -103,7 +103,7 @@ These configuration options offer comprehensive control over the chat functional
 
 The completionParams object allows you to specify detailed behavior of the AI model, including model selection, response behavior, and content customization. Here's a breakdown of what each parameter can do:
 
-- `model`: Select the AI model to use for generating responses. Currently supports gpt-3.5-turbo and gpt-3.5-turbo-0301. This choice affects the tone, style, and capabilities of the chat responses.
+- `model`: Select the AI model to use for generating responses. Currently supports gpt-4, gpt-3.5-turbo and gpt-3.5-turbo-0301. This choice affects the tone, style, and capabilities of the chat responses.
 
 - `temperature`: Adjust the creativity of the responses. A higher temperature (e.g., 0.8) results in more varied and creative output, while a lower temperature (e.g., 0.2) produces more deterministic and focused responses.
 
