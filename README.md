@@ -44,7 +44,7 @@ import SparkleChat from 'react-native-sparkle-ai-chat';
     platform={'openai'}
     apiKey={'YOUR_API_KEY_HERE'}
     instruction={
-        'Coffiaa AI Assistant is a virtual assistant that can help you about varies coffees that offers in Caffiaa Cafe. Ask me anything!'
+        'Coffiaa AI Assistant is a virtual assistant that can help you with various coffees offered at Caffiaa Cafe. Ask me anything!'
     }
     brand={{
         name: 'Coffiaa AI Assistant',
@@ -60,7 +60,7 @@ import SparkleChat from 'react-native-sparkle-ai-chat';
 />
 ```
 
-Replace 'YOUR_API_KEY_HERE' with your actual OpenAI key.
+Replace `YOUR_API_KEY_HERE` with your actual OpenAI key.
 
 See [`AIChatScreen.tsx`](https://github.com/lakpriya1s/react-native-sparkle-ai-chat/blob/main/example/src/screens/AIChatScreen.tsx)
 
