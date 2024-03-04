@@ -3122,14 +3122,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-async-storage/async-storage@npm:^1.22.0":
-  version: 1.22.1
-  resolution: "@react-native-async-storage/async-storage@npm:1.22.1"
+"@react-native-async-storage/async-storage@npm:^1.22.3":
+  version: 1.22.3
+  resolution: "@react-native-async-storage/async-storage@npm:1.22.3"
   dependencies:
     merge-options: ^3.0.4
   peerDependencies:
     react-native: ^0.0.0-0 || >=0.60 <1.0
-  checksum: 7f2dca1a9510cefba0639e041612ede39fbac4f684b3d55abce19ce63e497bfa8b1cc090d55f56656f4822024b7ac71ca608536fcec3decbb5e6d2ea21d21e21
+  checksum: bbf0f49c4441361d24f5c7a236862757d1addb7332d4c11ed7238b7023e882d2280290059602d9099cee094f60aeb11aad3f2017652ab6e143544e61dccadb73
   languageName: node
   linkType: hard
 
@@ -14844,7 +14844,7 @@ __metadata:
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0
-    "@react-native-async-storage/async-storage": ^1.22.0
+    "@react-native-async-storage/async-storage": ^1.22.3
     "@react-native/eslint-config": ^0.73.1
     "@reduxjs/toolkit": ^2.2.1
     "@release-it/conventional-changelog": ^5.0.0
