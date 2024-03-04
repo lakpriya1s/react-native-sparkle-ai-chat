@@ -28,9 +28,9 @@ Install our app to check the features!
 ## Installation
 
 ```bash
-npm install react-native-sparkle-ai-chat
-or
-yarn add react-native-sparkle-ai-chat
+npm i react-native-sparkle-ai-chat @react-native-async-storage/async-storage
+#or
+yarn add react-native-sparkle-ai-chat @react-native-async-storage/async-storage
 ```
 
 ## Usage

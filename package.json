@@ -1,6 +1,6 @@
 {
   "name": "react-native-sparkle-ai-chat",
-  "version": "0.1.8",
+  "version": "0.1.90",
   "description": "Sparkle AI SDK for react-native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -157,7 +157,6 @@
     ]
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.22.3",
     "@reduxjs/toolkit": "^2.2.1",
     "p-timeout": "^6.1.2",
     "react-native-sse": "^1.2.0",
